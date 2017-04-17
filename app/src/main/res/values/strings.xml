@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Trabalhinho</string>
+
+    <!-- TextViews -->
+    <string name="txtValor1">Valor 1:</string>
+    <string name="txtValor2">Valor 2:</string>
+    <string name="txtValor1a">Valor 1(a):</string>
+    <string name="txtValor2b">Valor 2(b):</string>
+    <string name="txtValor3c">Valor 3(c):</string>
+    <string name="txtOperacoes">Operações</string>
+    <string name="txtResultado">Resultado</string>
+    <string name="txtDelta">Delta :</string>
+    <string name="txtX1">X1 :</string>
+    <string name="txtX2">X2 :</string>
+    <string name="txtNome">Nome :</string>
+    <string name="txtData">Data :</string>
+    <string name="txtTelefone">Telefone :</string>
+    <string name="txtEmail">Email :</string>
+    <string name="txtBemVindo">Seja bem vindo ao mundo android</string>
+    <string name="txtVoltar">VOLTAR</string>
+    <string name="txtEnviar">ENVIAR</string>
+
+    <!-- Botoes -->
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnVoltar">Voltar</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="btnSomar">+</string>
+    <string name="btnSubtrair">-</string>
+    <string name="btnMultiplicacao">*</string>
+    <string name="btnDivisao">/</string>
+
+</resources>

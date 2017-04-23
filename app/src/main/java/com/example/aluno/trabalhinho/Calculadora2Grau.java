@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Calculadora2Grau extends AppCompatActivity {
 
@@ -20,6 +21,8 @@ public class Calculadora2Grau extends AppCompatActivity {
 
     Button btnCalcular;
     Button btnVoltar;
+
+    double delta, valor1, valor2, valor3,x1,x2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,23 @@ public class Calculadora2Grau extends AppCompatActivity {
                     builder.setMessage("Campos em Branco");
                     builder.setNeutralButton("OK", null);
                     builder.show();
+                }else{
+                    valor1 = Double.parseDouble(v1);
+                    valor2 = Double.parseDouble(v2);
+                    valor3 = Double.parseDouble(v3);
+
+                    delta = ((valor2*valor2)-(4*valor1*valor3));
+
+                    if(delta >= 0){
+                        x1 = ((-valor2 + (Math.sqrt (delta))) / (2*valor1));
+                        x2 = ((-valor2 - (Math.sqrt (delta))) / (2*valor1));
+
+                        txtDelta.setText(String.valueOf(delta));
+                        txtX1.setText(String.valueOf(x1));
+                        txtX2.setText(String.valueOf(x2));
+                    }else{
+                        Toast.makeText(v.getContext(), "Delta Invalido", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
